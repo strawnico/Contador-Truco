@@ -41,9 +41,19 @@ function subtrair(event) {
 
 function ganhador() {
 
-    if (count1 = 12) {
+    if (count1 == 12) {
         alert('O grupo "Nós" ganhou!')
+        count1 = 0;
+        document.getElementById("nosPts").innerHTML = count1;
+
+        count2 = 0;
+        document.getElementById("elesPts").innerHTML = count2;
     } else {
         alert('O grupo "Eles" ganhou!')
+        count1 = 0;
+        document.getElementById("nosPts").innerHTML = count1;
+
+        count2 = 0;
+        document.getElementById("elesPts").innerHTML = count2;
     }
 }
