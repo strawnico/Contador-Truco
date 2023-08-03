@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador de truco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Tillana:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+  </head>
+  <body
+    style="
+      background-image: url('./wppRosa.png');
+      background-color: #ffd4e4;
+      display: flex;
+      height: 100vh;
+      margin: 0;
+    "
+  >
+    <div
+      style="
+        background-color: white;
+        width: 50%;
+        max-width: 40rem;
+        height: 30rem;
+        border-radius: 2.7rem;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        position: relative;
+      "
+    >
+      <p
+        style="
+          font-family: 'Tillana', cursive;
+          color: rgba(64, 51, 58, 0.5);
+          position: absolute;
+          left: 0;
+          padding-left: 20px;
+        "
+      >
+        Contador de truco
+      </p>
+      <div class="allTeams" style="width:100%; justify-content: space-between; display: flex; margin: auto 0; padding: 0px 150px;">
+        <div class="team" style="display: inline-block">
+          <p class="group">Nós</p>
+          <h3 id="nosPts">0</h3>
+          <div id="buttonNos">
+            <button class="buttonStyle" id="menos1" onclick="subtrair(event)">
+              -1
+            </button>
+            <button class="buttonStyle" id="mais1" onclick="somar(event)">+1</button>
+          </div>
+        </div>
+        <div class="team" style="display: inline-block">
+          <p class="group">Eles</p>
+          <h3 id="elesPts">0</h3>
+          <div id="buttonEles">
+            <button class="buttonStyle" id="menos2" onclick="subtrair(event)">
+              -1
+            </button>
+            <button class="buttonStyle" id="mais2" onclick="somar(event)">+1</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .buttonStyle {
+    background-color: #ffaecc;
+    border-radius: 5px;
+    border: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+
+  .group {
+    color: #ffaecc;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-family: "Poppins", sans-serif;
+    color: #40333a;
+    font-weight: 600;
+    font-size: 70px;
+  }
+</style>
